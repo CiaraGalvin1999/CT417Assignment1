@@ -3,7 +3,7 @@ plugins {
     id 'maven-publish'
 }
 
-group 'org.example'
+group 'com.github.CiaraGalvin1999'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -20,4 +20,16 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.github.CiaraGalvin1999'
+            artifactId = 'CT417Assignment1'
+            version = '1.0-SNAPSHOT'
+
+            from components.java
+        }
+    }
 }
