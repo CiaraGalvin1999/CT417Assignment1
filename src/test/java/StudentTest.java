@@ -127,12 +127,12 @@ public class StudentTest {
         testStudents[1] = new Student();
 
         //Create test start and end times for academic year
-        DateTime testStartTime = new DateTime(2021, 9, 5, 0, 0);
-        DateTime testEndTime = new DateTime(2022, 5, 20, 23,59);
+        DateTime testStartDate = new DateTime(2021, 9, 5, 0, 0);
+        DateTime testEndDate = new DateTime(2022, 5, 20, 23,59);
 
         //Add test courses to array of test courses
-        testCourses[0] = new CourseProgramme("Computer Science", testModules, testStudents, testStartTime, testEndTime);
-        testCourses[1] = new CourseProgramme("Engineering", testModules, testStudents, testStartTime, testEndTime);
+        testCourses[0] = new CourseProgramme("Computer Science", testModules, testStudents, testStartDate, testEndDate);
+        testCourses[1] = new CourseProgramme("Engineering", testModules, testStudents, testStartDate, testEndDate);
 
         //Set the courses the student is taking using the setter method
         testStudent.setCourses(testCourses);
