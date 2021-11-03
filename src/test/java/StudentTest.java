@@ -79,32 +79,6 @@ public class StudentTest {
     }
 
     @Test
-    @DisplayName("Tests that setUsername updates student username correctly")
-    void testSetUsername() {
-        //Create test student object
-        Student testStudent = new Student();
-
-        //Assert that username is initially null
-        Assertions.assertNull(testStudent.getUsername());
-
-        //Call setter method for student username
-        testStudent.setUsername();
-
-        //Assert that username is still null
-        Assertions.assertNull(testStudent.getUsername());
-
-        //Update age and name of student
-        testStudent.setName("Andrew");
-        testStudent.setAge(26);
-
-        //Call setter method for student username
-        testStudent.setUsername();
-
-        //Assert that username is updated correctly
-        Assertions.assertEquals("Andrew26", testStudent.getUsername());
-    }
-
-    @Test
     @DisplayName("Test that Student setCourses() class sets array of courses student is taking correctly.")
     void testSetCourses() {
         //Create test student object
