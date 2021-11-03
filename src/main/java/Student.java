@@ -5,7 +5,6 @@ public class Student {
     private int age;
     private Date dob;
     private long id;
-    private String username;
     private CourseProgramme[] courses;
     private Module[] modules;
 
@@ -18,7 +17,6 @@ public class Student {
         this.age = age;
         this.dob = dob;
         this.id = id;
-        this.username = name.concat(Integer.toString(age));
         this.courses = courses;
         this.modules = modules;
     }
@@ -35,14 +33,6 @@ public class Student {
     }
     public void setId(long id) {
         this.id = id;
-    }
-    public void setUsername() {
-        //If student name or age hasn't been set, username cannot be created. Must stay as null
-        if(name == null || age == 0) {
-            username = null;
-        }
-        //Otherwise, create username by concatenating student name and student age
-        else username = name.concat(Integer.toString(age));
     }
     public void setCourses(CourseProgramme[] courses) {
         this.courses = courses;
